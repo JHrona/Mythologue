@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Vector2 direction;
     private Animator animator;
+    public Rigidbody2D rb;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         transform.Translate(direction * speed * Time.deltaTime);
+       //rb.velocity = new Vector2(direction.x, direction.y);
 
         if (direction.x != 0 || direction.y != 0)
         {
