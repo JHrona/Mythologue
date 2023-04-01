@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Rock
   layers:
   - Default
   - TransparentFX
@@ -38,9 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Vrstva 1
-    uniqueID: 3245089271
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3245089271
     locked: 0
