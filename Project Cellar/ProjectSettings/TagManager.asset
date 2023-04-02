@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Rock
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Ladder
   - 
   - 
   - 
