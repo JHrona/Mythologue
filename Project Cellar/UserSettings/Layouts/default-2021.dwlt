@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 12808
+  controlID: 106
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 12809
+  controlID: 107
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 12786
+  controlID: 108
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -217,15 +217,15 @@ MonoBehaviour:
     height: 699
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 251
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -354,23 +354,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 06d00000
-      m_LastClickedID: 53254
-      m_ExpandedIDs: 3a81fdff6281fdff1290fdff2490fdff103efeff0442feff5850feff2a51feffc454feff326dfeff866dfeffda6dfeff326efeff4aaafeff5aaafeff6caafeff7ab6feff44c1feff5cc4feff30c5feff4addfeffc2ddfeffb0e1feff5ee2feffa6e2feffe6e2feff30e3feffaae3feff20e4feff68e6feff8afbfefffcfdfeffc41dffff541effffb226ffff6429ffff9429fffff429ffff5a42ffff6a42ffff7e42ffff0c43ffff2ea7ffff7ab1ffffd8b4ffff92b6ffffecc3ffff74c9ffff8cc9ffff64caffff5ed4ffff54d8ffff86daffff52dfffff8ee1ffff4cf5ffff28fbfffff4ffffff9c820000b4820000e6820000b4860000a8870000b48700000a880000fa8800002c8900004e8b000014a30000e2a900006cb00000ceb1000034b600003eb600005ab6000064b6000074b60000bacc0000e8ce0000b4cf000018d0000046d00000
+      m_SelectedIDs: e2750000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6cb7ffff12d2ffff28fbffff5c82000076820000b2820000cc820000e0820000388300004c8300005283000072830000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Canvas
+        m_OriginalName: Canvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 33372
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -643,7 +643,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -661,9 +661,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 205.40858, y: 311.55368, z: 7.775918}
+    m_Target: {x: 32.7473, y: 14.462668, z: 14.813421}
     speed: 2
-    m_Value: {x: 205.40858, y: 311.55368, z: 7.775918}
+    m_Value: {x: 31.395868, y: 13.733234, z: 14.831855}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -714,9 +714,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 323.8608
+    m_Target: 42.80728
     speed: 2
-    m_Value: 323.8608
+    m_Value: 40.963905
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -803,7 +803,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -163526
+  m_LastSelectedObjectID: 25100
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1043,22 +1043,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 78
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 78
   m_LastProjectPath: E:\Games\Github\Project-Cellar\Project Cellar
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac630000
-    m_LastClickedID: 25516
-    m_ExpandedIDs: 000000007c6300007e63000080630000826300008463000086630000886300008a6300008c6300008e63000090630000926300009463000096630000986300009a630000
+    m_SelectedIDs: a4650000
+    m_LastClickedID: 26020
+    m_ExpandedIDs: 00000000fa640000fc640000fe64000000650000026500000465000006650000086500000a6500000c6500000e6500001065000012650000146500001665000018650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1086,7 +1086,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c6300007e63000080630000826300008463000086630000886300008a6300008c6300008e63000090630000926300009463000096630000986300009a630000
+    m_ExpandedIDs: 00000000fa640000fc640000fe64000000650000026500000465000006650000086500000a6500000c6500000e6500001065000012650000146500001665000018650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
