@@ -44,12 +44,12 @@ public class PlayerMovement : MonoBehaviour
 
         if(DashRefill < 0.0f)
         {
-          dash +=3;
+          dash +=1;
           DashRefill = 5;
           SetDash();
-          if(dash > 50)
+          if(dash > 2)
           {
-            dash = 50;
+            dash = 2;
           }
         }
 
@@ -104,9 +104,9 @@ public class PlayerMovement : MonoBehaviour
          direction += Vector2.right;
          FacingDir = Facing.RIGHT;
         }
-        if(Input.GetKeyDown(KeyCode.Space) && dash < 3.9)
+        if(Input.GetKeyDown(KeyCode.Space) && dash > 0.9)
         {
-            dash -= 4;
+            dash -= 1;
             SetDash();
             Vector2 currentPos = transform.position;
             targetPos = Vector2.zero;

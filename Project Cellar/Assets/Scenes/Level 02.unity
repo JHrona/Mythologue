@@ -4509,7 +4509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8505108355955239141, guid: 257dde9f1a1ba164abd1b05948bb637d, type: 3}
       propertyPath: dashRange
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8505108355955239141, guid: 257dde9f1a1ba164abd1b05948bb637d, type: 3}
       propertyPath: m_Enabled
@@ -4590,7 +4590,7 @@ MonoBehaviour:
   minDamage: 20
   maxDamage: 30
   projectileForce: 10
-  cooldown: 2
+  cooldown: 0.3
 --- !u!50 &8505108356041434644 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 8505108355955239138, guid: 257dde9f1a1ba164abd1b05948bb637d, type: 3}
