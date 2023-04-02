@@ -12,7 +12,6 @@ public class MainMenu : MonoBehaviour
        SceneManager.LoadScene(1); 
     }
 
-
     // Nastavení
         public void OpenSettings()
     {
