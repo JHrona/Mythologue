@@ -42,7 +42,11 @@ public class EnemyRecieveDamage : MonoBehaviour
     private void CheckDeath()
     {
         if(health <= 0)
-        Destroy(gameObject);
+        {
+            health = 0;
+            Destroy(gameObject);
+        }
+
     }
 
     private float CalculateHealthPercentage()
