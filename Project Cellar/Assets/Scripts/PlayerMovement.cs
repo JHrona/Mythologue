@@ -125,10 +125,21 @@ public class PlayerMovement : MonoBehaviour
               else if (FacingDir == Facing.RIGHT)
               {
                   targetPos.x = 1;
-              }      
+              }   
+
+         RaycastHit2D hit = Physics2D.Raycast(currentPos, targetPos, dashRange);
+
+        
+          if (hit.collider != null)
+          {
+              transform.position = hit.point;
+          }
+         else
+           {   
 
           transform.Translate(targetPos * dashRange);
-        }
+           }
+       }
        
     }
 
@@ -147,5 +158,3 @@ public class PlayerMovement : MonoBehaviour
     return (dash / maxDash);
   }
 }
-
-

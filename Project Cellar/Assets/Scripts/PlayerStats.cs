@@ -14,6 +14,9 @@ public class PlayerStats : MonoBehaviour
     public float health;
     public float maxHealth;
 
+    public int coins;
+    // public int gems;
+
     void Awake()
     {
         if(playerStats != null)
