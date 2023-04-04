@@ -8,21 +8,13 @@ public class CurrencyPickup : MonoBehaviour
     public PickupObject currentObject;
     public int pickupQuantity;
 
-    void OnTriggerEnter (Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.name == "Player")
         {
-            if(currentObject == PickupObject.COIN)
-            {
-            PlayerStats.playerStats.coins += pickupQuantity;
-            Debug.Log(PlayerStats.playerStats.coins);
-            }
-            /*else if(currentObject == PickupObject.GEM)
-            {
-            PlayerStats.playerStats.coins += pickupQuantity;
-            Debug.Log(PlayerStats.playerStats.coins);
-            }
-            */
+            PlayerStats.playerStats.AddCurrency(this);
+            Destroy(gameObject);
+
         }
         
     }
