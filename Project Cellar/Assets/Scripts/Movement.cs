@@ -5,14 +5,12 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private new Rigidbody2D rigidbody2D;
-    private Vector3 moveDir;
-    //private Vector2 moveDir;
-    private const float MOVE_SPEED = 8f;
+    private Vector2 moveDir;
+    private Vector2 lastMoveDir;
+    private Vector2 dashDir; // nová proměnná pro směr dáshování
+    private const float SPEED = 8f;
     private Animator animator;
     private bool isDashButtonDown;
-
-   // private enum Facing {UP, DOWN, LEFT, RIGHT};
-   // private Facing FacingDir = Facing.DOWN;
 
     private void Awake()
     {
@@ -22,117 +20,64 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        HandleMovement();
+    }
 
+    private void HandleMovement()
+    {
         float moveX = 0f;
         float moveY = 0f;
-        if  (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            moveY = 1f;
+            moveY = +1f;
         }
-        if  (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             moveY = -1f;
         }
-        if  (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) 
         {
             moveX = -1f;
         }
-        if  (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            moveX = 1f;
+            moveX = +1f;
         }
 
-        moveDir = new Vector3(moveX, moveY).normalized;
-        Anim();
+        // použití instance proměnné moveDir
+        moveDir = new Vector2(moveX, moveY).normalized;
 
-       // TakeInput();
-       // Move();
-
-     /*   if(Input.GetKeyDown(KeyCode.Space))
+        bool isIdle = moveX == 0 && moveY == 0;
+        if (isIdle)
         {
-          isDashButtonDown = true;    
-        }
-        */
-    }
-
-private void Anim()
-{
- //   moveDir = new Vector3(moveDir.x, moveDir.y).normalized;
-
-    if (moveDir.x != 0 || moveDir.y != 0)
-    {
-        animator.SetBool("isWalking", true);
-        SetAnimatorMovement(moveDir);
-    }
-    else
-    {
-        animator.SetBool("isWalking", false);
-        animator.SetLayerWeight(1, 0);
-    }
-}
-
-    /*private void TakeInput()
-    {
-       moveDir = Vector2.zero;
-
-       if(Input.GetKey(KeyCode.W))
-       {
-         moveDir += Vector2.up;
-         FacingDir = Facing.UP;
-        }
-       if(Input.GetKey(KeyCode.A))
-       {
-         moveDir += Vector2.left;
-         FacingDir = Facing.LEFT;
-        }
-       if(Input.GetKey(KeyCode.S))
-       {
-         moveDir += Vector2.down;
-         FacingDir = Facing.DOWN;
-        }
-       if(Input.GetKey(KeyCode.D))
-       {
-         moveDir += Vector2.right;
-         FacingDir = Facing.RIGHT;
-        }
-    } 
-    */
-
-    /*private void Move()
-    {
-      //  transform.Translate(moveDir * MOVE_SPEED * Time.deltaTime);
-      //  moveDir = new Vector3(moveDir.x, moveDir.y).normalized;
-       //rb.velocity = new Vector2(direction.x, direction.y);
-
-        if (moveDir.x != 0 || moveDir.y != 0)
-        {
-          SetAnimatorMovement(moveDir);
+            rigidbody2D.velocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
         }
         else
-      {
-          animator.SetLayerWeight(1, 0);
-      }
+        {
+            lastMoveDir = moveDir;
+            rigidbody2D.velocity = moveDir * SPEED;
+            animator.SetFloat("horizontalMovement", moveDir.x);
+            animator.SetFloat("verticalMovement", moveDir.y);
+            animator.SetBool("isMoving", true);
+        }
+
+        // přidáno - detekce klávesy pro Dash a výpočet směru dáshování
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            isDashButtonDown = true;
+            dashDir = lastMoveDir;
+        }
     }
-    */
 
     private void FixedUpdate()
     {
-        rigidbody2D.velocity = moveDir * MOVE_SPEED; 
-       /* if (isDashButtonDown)
+        // použití proměnné dashDir místo moveDir, pokud byla detekována klávesa pro Dash
+        if (isDashButtonDown)
         {
-          float dashAmount = 20f;
-          rigidbody2D.MovePosition(transform.position + moveDir * dashAmount);
-          isDashButtonDown = false;
-          
+            float dashAmount = 5f;
+            rigidbody2D.MovePosition(rigidbody2D.position + dashDir * dashAmount);
+            isDashButtonDown = false;
         }
-        */
     }
-
-      // float na animace
-  private void SetAnimatorMovement(Vector3 direction)
-  {
-    animator.SetLayerWeight(1, 1);
-    animator.SetFloat("xDir", moveDir.x);
-    animator.SetFloat("yDir", moveDir.y);
-  }
 }
