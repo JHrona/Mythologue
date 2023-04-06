@@ -23,6 +23,12 @@ public class Movement1 : MonoBehaviour
     private const float DASH_COOLDOWN = 2f; // cooldown pro Dash v sekundách
    public Slider dashSlider;
 
+
+    private float lastRollTime; // čas posledního Dashu
+    private const float ROLL_COOLDOWN = 2f; // cooldown pro Dash v sekundách
+   public Slider rollSlider;
+
+
     private void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -49,6 +55,7 @@ public class Movement1 : MonoBehaviour
         break;
     }
     dashSlider.value = Mathf.Clamp01((Time.time - lastDashTime) / DASH_COOLDOWN);
+    rollSlider.value = Mathf.Clamp01((Time.time - lastRollTime) / ROLL_COOLDOWN);
     }
 
     
@@ -103,11 +110,15 @@ public class Movement1 : MonoBehaviour
             lastDashTime = Time.time;
         }
         }
+        if (Time.time >= lastRollTime + ROLL_COOLDOWN)
+        {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rollDir = lastMoveDir;
             rollSpeed = 50f;
             state = State.Rolling;
+            lastRollTime = Time.time;
+        }
         }
 
     }
