@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 1
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 333013685, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1337608649, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1575020953, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -868719473, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1835838572, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1211807754, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1360168599, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1355172463, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1921140476, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1654569527, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1720575105, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1487146314, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 88781628, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 606125581, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1273929311, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 140437205, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 515427613, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -427963113, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -2032800217, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 394492734, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 739637174, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1356971433, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1022206945, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1310747830, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1520045119, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 233681384, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 705242204, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -815998075, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -320748444, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 182191211, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -50362154, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -13386412, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 23423675, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1137061316, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -805481745, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -298109623, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1091104192, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 960459598, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -549978390, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -153754180, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1675331123, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1984632967, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 549337750, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -984688766, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 29299987, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -251569835, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 800469758, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1032772964, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1138935961, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1551750811, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1819649253, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 804826949, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1927096288, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1207844509, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -830303436, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 229360831, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: 1863652975, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1351874008, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1629201911, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Basic Textures_0
+  - Basic Textures_1
+  - Basic Textures_2
+  - Basic Textures_3
+  - Basic Textures_4
+  - Basic Textures_5
+  - Basic Textures_6
+  - Basic Textures_7
+  - Basic Textures_8
+  - Basic Textures_9
+  - Basic Textures_26
+  - Basic Textures_27
+  - Basic Textures_24
+  - Basic Textures_25
+  - Basic Textures_39
+  - Basic Textures_22
+  - Basic Textures_38
+  - Basic Textures_23
+  - Basic Textures_20
+  - Basic Textures_21
+  - Basic Textures_48
+  - Basic Textures_31
+  - Basic Textures_49
+  - Basic Textures_30
+  - Basic Textures_33
+  - Basic Textures_28
+  - Basic Textures_32
+  - Basic Textures_44
+  - Basic Textures_29
+  - Basic Textures_35
+  - Basic Textures_45
+  - Basic Textures_59
+  - Basic Textures_34
+  - Basic Textures_46
+  - Basic Textures_58
+  - Basic Textures_37
+  - Basic Textures_47
+  - Basic Textures_57
+  - Basic Textures_36
+  - Basic Textures_40
+  - Basic Textures_56
+  - Basic Textures_41
+  - Basic Textures_55
+  - Basic Textures_42
+  - Basic Textures_54
+  - Basic Textures_43
+  - Basic Textures_53
+  - Basic Textures_52
+  - Basic Textures_51
+  - Basic Textures_50
+  - Basic Textures_13
+  - Basic Textures_12
+  - Basic Textures_11
+  - Basic Textures_10
+  - Basic Textures_17
+  - Basic Textures_15
+  - Basic Textures_14
+  - Basic Textures_19
+  - Basic Textures_18
+  m_RenderDataMap: {}
+  m_Tag: atlas
+  m_IsVariant: 0
