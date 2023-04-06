@@ -25,7 +25,7 @@ public class Movement1 : MonoBehaviour
 
 
     private float lastRollTime; // čas posledního Dashu
-    private const float ROLL_COOLDOWN = 2f; // cooldown pro Dash v sekundách
+    private const float ROLL_COOLDOWN = 3f; // cooldown pro Dash v sekundách
    public Slider rollSlider;
 
 
