@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement1 : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class Movement1 : MonoBehaviour
     private Animator animator;
     private bool isDashButtonDown;
     private State state;
+    private float lastDashTime; // čas posledního Dashu
+    private const float DASH_COOLDOWN = 2f; // cooldown pro Dash v sekundách
+   public Slider dashSlider;
 
     private void Awake()
     {
@@ -44,6 +48,7 @@ public class Movement1 : MonoBehaviour
         }
         break;
     }
+    dashSlider.value = Mathf.Clamp01((Time.time - lastDashTime) / DASH_COOLDOWN);
     }
 
     
@@ -89,9 +94,14 @@ public class Movement1 : MonoBehaviour
         }
 
         // přidáno - detekce klávesy pro Dash a výpočet směru dáshování
+
+        if (Time.time >= lastDashTime + DASH_COOLDOWN)
+        {
         if (Input.GetKeyDown(KeyCode.F))
         {
             isDashButtonDown = true;
+            lastDashTime = Time.time;
+        }
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -99,6 +109,7 @@ public class Movement1 : MonoBehaviour
             rollSpeed = 50f;
             state = State.Rolling;
         }
+
     }
 
     private void FixedUpdate()

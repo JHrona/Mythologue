@@ -2184,3 +2184,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f3594d9e3c3de428bcb12a59b75446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashSlider: {fileID: 1505127996}
