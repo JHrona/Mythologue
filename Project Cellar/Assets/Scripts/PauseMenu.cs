@@ -59,15 +59,23 @@ public class PauseMenu : MonoBehaviour
 
         public void LEVEL1()
     {
+        if(SceneManager.GetActiveScene().buildIndex != 1)
+        {
         Time.timeScale = 1f;
        SceneManager.LoadScene(1); 
+        }
+        return;
     }
 
         
         public void LEVEL2()
     {
-       Time.timeScale = 1f; 
+        if(SceneManager.GetActiveScene().buildIndex != 2)
+        {
+        Time.timeScale = 1f;
        SceneManager.LoadScene(2); 
+        }
+        return;
     }
 
         public void GoToMainMenu()
