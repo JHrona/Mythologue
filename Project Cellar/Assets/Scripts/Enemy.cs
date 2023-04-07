@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyRecieveDamage : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float health;
     public float maxHealth;
