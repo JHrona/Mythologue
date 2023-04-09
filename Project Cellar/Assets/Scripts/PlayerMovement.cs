@@ -140,6 +140,12 @@ public class PlayerMovement : MonoBehaviour
           transform.Translate(targetPos * dashRange);
            }
        }
+
+       if (Input.GetMouseButtonDown(0))
+       {
+        Vector3 mousePosition = GetMouseWorldPosition();
+        Vector3 attaclDor = (mousePosition - transform.position).normalized;
+       }
        
     }
 
@@ -156,5 +162,27 @@ public class PlayerMovement : MonoBehaviour
   private float CalculateDash()
   {
     return (dash / maxDash);
+  }
+
+
+  public static Vector3 GetMouseWorldPosition()
+  {
+    Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+    vec.z = 0f;
+    return vec;
+  }
+
+  public static Vector3 GetMouseWorldPositionWithZ()
+  {
+    return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+  }
+  public static Vector3 GetMouseWorldPositionWithZ(Camera worldCamera)
+  {
+    return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
+  }
+  public static Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera)
+  {
+    Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
+    return worldPosition;
   }
 }

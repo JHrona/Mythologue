@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     private enum State {
         Normal,
         Rolling,
+        Attacking,
     }
     private new Rigidbody2D rigidbody2D;
     private Vector3 moveDir;
@@ -22,6 +23,7 @@ public class Movement : MonoBehaviour
     private float lastDashTime; // čas posledního Dashu
     private const float DASH_COOLDOWN = 2f; // cooldown pro Dash v sekundách
    public Slider dashSlider;
+
 
 
     private float lastRollTime; // čas posledního Dashu
@@ -42,6 +44,7 @@ public class Movement : MonoBehaviour
             case State.Normal:
          
         HandleMovement();
+        HandleAttack();
         break;
         case State.Rolling:
         float rollSpeedDropMultiplier = 5f;
@@ -53,6 +56,10 @@ public class Movement : MonoBehaviour
             state = State.Normal;
         }
         break;
+        case State.Attacking:
+        HandleAttack();
+        break;
+
     }
     dashSlider.value = Mathf.Clamp01((Time.time - lastDashTime) / DASH_COOLDOWN);
     rollSlider.value = Mathf.Clamp01((Time.time - lastRollTime) / ROLL_COOLDOWN);
@@ -121,6 +128,8 @@ public class Movement : MonoBehaviour
         }
         }
 
+
+
     }
 
     private void FixedUpdate()
@@ -141,4 +150,50 @@ public class Movement : MonoBehaviour
         break;
     }
     }
+      public static Vector3 GetMouseWorldPosition()
+  {
+    Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+    vec.z = 0f;
+    return vec;
+  }
+
+ private void HandleAttack()
+    {
+        if (Input.GetMouseButtonDown(0))
+       {
+        Vector3 mousePosition = GetMouseWorldPosition();
+        Vector3 mouseDir = (mousePosition - transform.position).normalized;
+        float attackOffset = 2f;
+        Vector3 attackPosition = transform.position + mouseDir * attackOffset;
+       // Debug.Log(attackPosition);
+ 
+        float attackRange = 30f;
+     /*   Enemy targetEnemy = Enemies.GetClosestEnemy(attackPosition, attackRange);
+        if (targetEnemy != null)
+        {
+            targetEnemy.Damage();
+        }*/
+               state = State.Attacking;
+        moveDir = Vector3.zero;
+        state = State.Normal; // přepnutí stavu na Normal po útoku
+       }
+    }
+
+  public static Vector3 GetMouseWorldPositionWithZ()
+  {
+    return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+  }
+  public static Vector3 GetMouseWorldPositionWithZ(Camera worldCamera)
+  {
+    return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
+  }
+  public static Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera)
+  {
+    Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
+    return worldPosition;
+}
+public void Damage()
+{
+    int damageAmount = 30;
+}
 }
