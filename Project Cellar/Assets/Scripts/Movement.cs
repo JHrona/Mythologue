@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
             case State.Normal:
          
         HandleMovement();
-        HandleAttack();
+     //   HandleAttack();
         break;
         case State.Rolling:
         float rollSpeedDropMultiplier = 5f;
@@ -56,9 +56,9 @@ public class Movement : MonoBehaviour
             state = State.Normal;
         }
         break;
-        case State.Attacking:
-        HandleAttack();
-        break;
+ //       case State.Attacking:
+   //     HandleAttack();
+ //       break;
 
     }
     dashSlider.value = Mathf.Clamp01((Time.time - lastDashTime) / DASH_COOLDOWN);
@@ -150,14 +150,14 @@ public class Movement : MonoBehaviour
         break;
     }
     }
-      public static Vector3 GetMouseWorldPosition()
+ /*     public static Vector3 GetMouseWorldPosition()
   {
     Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
     vec.z = 0f;
     return vec;
   }
 
- private void HandleAttack()
+/* private void HandleAttack()
     {
         if (Input.GetMouseButtonDown(0))
        {
@@ -172,7 +172,7 @@ public class Movement : MonoBehaviour
         if (targetEnemy != null)
         {
             targetEnemy.Damage();
-        }*/
+        }
                state = State.Attacking;
         moveDir = Vector3.zero;
         state = State.Normal; // přepnutí stavu na Normal po útoku
@@ -196,4 +196,5 @@ public void Damage()
 {
     int damageAmount = 30;
 }
+*/
 }
