@@ -93,6 +93,7 @@ SpriteAtlas:
   - {fileID: 1927096288, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
   - {fileID: 1207844509, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
   - {fileID: -830303436, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
+  - {fileID: -1351713052, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
   - {fileID: 229360831, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
   - {fileID: 1863652975, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
   - {fileID: -1351874008, guid: 6d73986b282897f488ab9d96a28d11b3, type: 3}
@@ -153,6 +154,7 @@ SpriteAtlas:
   - Basic Textures_11
   - Basic Textures_10
   - Basic Textures_17
+  - Basic Textures_16
   - Basic Textures_15
   - Basic Textures_14
   - Basic Textures_19
