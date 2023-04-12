@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1108900707359883727}
   - component: {fileID: 919298879308460874}
   - component: {fileID: -5996308041857696394}
-  m_Layer: 0
+  m_Layer: 25
   m_Name: Test Enemy Spell
   m_TagString: Enemy
   m_Icon: {fileID: 0}
