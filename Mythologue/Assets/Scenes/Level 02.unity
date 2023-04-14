@@ -523,12 +523,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36ff6d729722cd42914cda0c1f29e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 681412304}
   projectile: {fileID: 2957969039505547911, guid: 49705974044f9f64db758974e1466514, type: 3}
   minDamage: 5
   maxDamage: 5
   projectileForce: 5
   cooldown: 2
-  player: {fileID: 681412304}
 --- !u!1 &493506945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,7 +1587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611893, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611894, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: player
