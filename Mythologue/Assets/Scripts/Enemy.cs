@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public float health;
     public float maxHealth;
-
+    private new Rigidbody2D rigidbody2D;
     public GameObject healthBar;
     public Slider healthBarSlider;
 
@@ -20,6 +20,14 @@ public class Enemy : MonoBehaviour
     public float cooldown;
         protected GameObject target;
           private float lastShotTime;
+
+
+
+    private void Awake()
+    {
+        rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
 
     void Start()
     {
@@ -97,22 +105,22 @@ public class Enemy : MonoBehaviour
     {
         if (player != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 1f * Time.deltaTime);
+            rigidbody2D.transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 1f * Time.deltaTime);
             }
     }
     // create enemy ai to move towards the player when the player is within a certain radius of the enemy
 
     
     // create a function to not shoot at the player if the enemy is moving towards the player
-    public void EnemyAI()
+public void EnemyAI()
+{
+    float distance = Vector3.Distance(transform.position, player.transform.position);
+    if (distance >= 5f)
     {
-        float distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance >= 5f)
-        {
-            MoveTowardsPlayer();
-        }
-
+        AvoidObstacles(); // Zamezi narazu do prekazek
+        MoveTowardsPlayer();
     }
+}
 
   private void ShootPlayer()
     {
@@ -138,5 +146,28 @@ public class Enemy : MonoBehaviour
 
     }
 
+private void AvoidObstacles()
+{
+    float distance = Vector3.Distance(transform.position, player.transform.position);
+    Vector2 directionToPlayer = (player.transform.position - transform.position).normalized;
+
+    // Raycast v náhodném směru od příšery
+    Vector2 randomDirection = UnityEngine.Random.insideUnitCircle.normalized;
+    RaycastHit2D hit = Physics2D.Raycast(transform.position, randomDirection, 1f, obstacleLayerMask);
+
+    // Pokud narazíte na překážku, změňte směr pohybu tak, aby se postupně dostával do bezpečné vzdálenosti od překážky
+    if (hit.collider != null)
+    {
+        Vector2 normal = hit.normal;
+        Vector2 reflectionDirection = Vector2.Reflect(randomDirection, normal);
+        Vector2 newDirection = Vector2.Lerp(reflectionDirection, directionToPlayer, 0.5f).normalized;
+        rigidbody2D.velocity = newDirection * 2f;
+    }
+    else if (distance >= 5f) // Pokud nenarazíte na překážku, pokračujte v pohybu k hráči, pokud je dostatečně daleko
+    {
+        rigidbody2D.velocity = directionToPlayer * 2f;
+    }
+}
+public LayerMask obstacleLayerMask;
 
 }

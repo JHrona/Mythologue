@@ -523,12 +523,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36ff6d729722cd42914cda0c1f29e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 681412304}
   projectile: {fileID: 2957969039505547911, guid: 49705974044f9f64db758974e1466514, type: 3}
   minDamage: 5
   maxDamage: 5
   projectileForce: 5
   cooldown: 2
-  player: {fileID: 681412304}
+--- !u!4 &488869221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 945255124263611888, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+  m_PrefabInstance: {fileID: 888072301}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &493506945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611893, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611894, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: player
@@ -1610,8 +1615,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2957969039505547911, guid: 49705974044f9f64db758974e1466514, type: 3}
     - target: {fileID: 945255124263611894, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: avoidanceForce
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255124263611894, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: projectileForce
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255124263611894, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: raycastDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255124263611894, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: obstacleLayerMask.m_Bits
+      value: 16777216
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611895, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: player
@@ -1631,7 +1648,7 @@ PrefabInstance:
       objectReference: {fileID: 681412302}
     - target: {fileID: 945255124263611897, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611897, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: bulletPrefab
@@ -3347,6 +3364,64 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1780417508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1780417509}
+  - component: {fileID: 1780417510}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1780417509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780417508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 488869221}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1780417510
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780417508}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009126466, y: -0.064575665}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.05986499, y: 0.039802417}
+  m_EdgeRadius: 0
 --- !u!1001 &1807283280
 PrefabInstance:
   m_ObjectHideFlags: 0
