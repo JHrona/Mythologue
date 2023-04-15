@@ -735,7 +735,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Project Cellar
+  m_text: Mythologue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a97bd7bb78b9e924c804d3da1a18b4a7, type: 2}
   m_sharedMaterial: {fileID: 98765853946493441, guid: a97bd7bb78b9e924c804d3da1a18b4a7, type: 2}
