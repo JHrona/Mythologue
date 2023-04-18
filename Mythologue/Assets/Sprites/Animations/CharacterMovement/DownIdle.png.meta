@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45a7a0c1e4b9d42b5a39dcf2a60bb15e
+guid: fdeed98c9f3b5426f980df93a3a73bdd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IdleDown_0
+      name: DownIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f59b13874fe2465ba69926d8282110e
-      internalID: -877147113
+      spriteID: 2e15e941fff2e44a3a19d720b3aad57f
+      internalID: 1306111809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleDown_1
+      name: DownIdle_1
       rect:
         serializedVersion: 2
         x: 16
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26189388b6fb34a00b9ab20bdb41f251
-      internalID: -1262562380
+      spriteID: be2201c3f09d045fa9c0dbbe0ff435cb
+      internalID: 677348290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleDown_2
+      name: DownIdle_2
       rect:
         serializedVersion: 2
         x: 32
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8b670f0d54194c3cad024b7e287bb67
-      internalID: 696263686
+      spriteID: ddafd3f7a2a1840df93f5cd4174ac73e
+      internalID: -152083655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleDown_3
+      name: DownIdle_3
       rect:
         serializedVersion: 2
         x: 48
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19bf8d371628a4e4da63420d6b93ecb4
-      internalID: 1767763099
+      spriteID: d5eb1b4050af8403fba68a5602bf64f2
+      internalID: 1558099895
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IdleDown_0: -877147113
-      IdleDown_1: -1262562380
-      IdleDown_2: 696263686
-      IdleDown_3: 1767763099
+      DownIdle_0: 1306111809
+      DownIdle_1: 677348290
+      DownIdle_2: -152083655
+      DownIdle_3: 1558099895
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
