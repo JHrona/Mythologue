@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8505108355955239139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.09, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,7 +98,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -909851963, guid: f134be9faafbd7c4d872a05715e2a303, type: 3}
+  m_Sprite: {fileID: 1306111809, guid: fdeed98c9f3b5426f980df93a3a73bdd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +126,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.14, y: 0.21}
+    oldSize: {x: 1, y: 1.0625}
     newSize: {x: 0.14, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -147,7 +147,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d23625cf73b76d479bd58d2d6c314cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashRange: 0
   speed: 5
+  Player: {fileID: 8505108355955239139}
+  DashRefill: 5
+  dash: 0
+  maxDash: 0
+  DashSlider: {fileID: 0}
 --- !u!50 &8505108355955239138
 Rigidbody2D:
   serializedVersion: 4
