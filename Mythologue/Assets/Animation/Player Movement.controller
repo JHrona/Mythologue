@@ -91,10 +91,18 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: horizontalMovement
     m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 3a6558b8238964fd48366cf1e9b58f01, type: 2}
+    m_Threshold: 13
+    m_Position: {x: -0.5, y: 0.5}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: horizontalMovement
+    m_Mirror: 0
   m_BlendParameter: horizontalMovement
   m_BlendParameterY: verticalMovement
   m_MinThreshold: -1
-  m_MaxThreshold: 11
+  m_MaxThreshold: 13
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 1
