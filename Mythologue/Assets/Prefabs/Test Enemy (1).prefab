@@ -588,6 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36ff6d729722cd42914cda0c1f29e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   projectile: {fileID: 2957969039505547911, guid: 49705974044f9f64db758974e1466514, type: 3}
   minDamage: 10
   maxDamage: 20
@@ -610,6 +611,12 @@ MonoBehaviour:
   healthBar: {fileID: 945255123372667383}
   healthBarSlider: {fileID: 945255123372667380}
   lootDrop: {fileID: 1219347471891894461, guid: 5d49700fbb34d2f4294037ffbc658e2b, type: 3}
+  player: {fileID: 0}
+  projectile: {fileID: 0}
+  minDamage: 0
+  maxDamage: 0
+  projectileForce: 0
+  cooldown: 0
 --- !u!114 &945255124263611897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,8 +624,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945255124263611896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b4c5d364d50877478baf9d633caf07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
