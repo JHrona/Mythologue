@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fdeed98c9f3b5426f980df93a3a73bdd
+guid: 6f4ffbf00755e49faa899145a241cb6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DownIdle_0
+      name: DTRIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78dc9e812c8714ec18449c7b12b70ab7
-      internalID: -604885547
+      spriteID: ca51b438617c04cdfa0209bdbbeee1d6
+      internalID: 1041884562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DownIdle_1
+      name: DTRIdle_1
       rect:
         serializedVersion: 2
         x: 16
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7920a38dfb45548ee9e2ac6108768dba
-      internalID: 1895866578
+      spriteID: 3445d9b2a100e4b109af42aa0195c4c5
+      internalID: 1732770213
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DownIdle_0: -604885547
-      DownIdle_1: 1895866578
+      DTRIdle_0: 1041884562
+      DTRIdle_1: 1732770213
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
