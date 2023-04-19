@@ -518,7 +518,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488869205}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f36ff6d729722cd42914cda0c1f29e09, type: 3}
   m_Name: 
@@ -527,8 +527,8 @@ MonoBehaviour:
   projectile: {fileID: 2957969039505547911, guid: 49705974044f9f64db758974e1466514, type: 3}
   minDamage: 5
   maxDamage: 5
-  projectileForce: 5
-  cooldown: 2
+  projectileForce: 10
+  cooldown: 0.5
 --- !u!4 &488869221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 945255124263611888, guid: a289baa4649bbb54abb840d13775c651, type: 3}
@@ -1680,7 +1680,7 @@ PrefabInstance:
       objectReference: {fileID: 681412302}
     - target: {fileID: 945255124263611897, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611897, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: bulletPrefab
