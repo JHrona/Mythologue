@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 7450668621557330267, guid: 87185a00e8a43d942b60f46b0926e511, type: 3}
   minDamage: 20
-  maxDamage: 30
+  maxDamage: 20
   projectileForce: 10
   cooldown: 0.3
 --- !u!114 &681412307
@@ -1139,6 +1139,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashSlider: {fileID: 1994573497}
   rollSlider: {fileID: 1221069163}
+--- !u!114 &681412308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681412304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c581db1ee52ac449b562c0ec46505f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 2
+  attackDamage: 20
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &713480215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,6 +1596,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 945255122259366105, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255122690805238, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255123055105065, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255123372667383, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255123400314097, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255123402681854, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 945255124263611888, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1623,6 +1664,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.193
       objectReference: {fileID: 0}
+    - target: {fileID: 945255124263611892, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 945255124263611893, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1666,6 +1711,10 @@ PrefabInstance:
     - target: {fileID: 945255124263611896, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Name
       value: Test Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255124263611896, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a289baa4649bbb54abb840d13775c651, type: 3}
@@ -3444,7 +3493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780417509}
   - component: {fileID: 1780417510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Enemy
   m_Icon: {fileID: 0}
