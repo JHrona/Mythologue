@@ -430,9 +430,7 @@ GameObject:
   - component: {fileID: 945255124263611890}
   - component: {fileID: 945255124263611893}
   - component: {fileID: 945255124263611892}
-  - component: {fileID: 945255124263611895}
   - component: {fileID: 945255124263611894}
-  - component: {fileID: 945255124263611897}
   m_Layer: 0
   m_Name: Test Enemy (1)
   m_TagString: Enemy
@@ -576,24 +574,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &945255124263611895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945255124263611896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f36ff6d729722cd42914cda0c1f29e09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  projectile: {fileID: 2957969039505547911, guid: 49705974044f9f64db758974e1466514, type: 3}
-  minDamage: 10
-  maxDamage: 20
-  projectileForce: 5
-  cooldown: 3
 --- !u!114 &945255124263611894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,16 +597,3 @@ MonoBehaviour:
   maxDamage: 0
   projectileForce: 0
   cooldown: 0
---- !u!114 &945255124263611897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945255124263611896}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4c5d364d50877478baf9d633caf07e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
