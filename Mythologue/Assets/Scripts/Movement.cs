@@ -24,6 +24,10 @@ public class Movement : MonoBehaviour
     private const float DASH_COOLDOWN = 2f; // cooldown pro Dash v sekundách
    public Slider dashSlider;
 
+   
+      public float cooldown;
+          private float lastShotTime;
+
 
 
     private float lastRollTime; // čas posledního Dashu
@@ -44,6 +48,7 @@ public class Movement : MonoBehaviour
             case State.Normal:
          
         HandleMovement();
+        OnFire();
      //   HandleAttack();
         break;
         case State.Rolling:
@@ -150,51 +155,13 @@ public class Movement : MonoBehaviour
         break;
     }
     }
- /*     public static Vector3 GetMouseWorldPosition()
-  {
-    Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
-    vec.z = 0f;
-    return vec;
-  }
-
-/* private void HandleAttack()
-    {
-        if (Input.GetMouseButtonDown(0))
-       {
-        Vector3 mousePosition = GetMouseWorldPosition();
-        Vector3 mouseDir = (mousePosition - transform.position).normalized;
-        float attackOffset = 2f;
-        Vector3 attackPosition = transform.position + mouseDir * attackOffset;
-       // Debug.Log(attackPosition);
- 
-        float attackRange = 30f;
-     /*   Enemy targetEnemy = Enemies.GetClosestEnemy(attackPosition, attackRange);
-        if (targetEnemy != null)
-        {
-            targetEnemy.Damage();
-        }
-               state = State.Attacking;
-        moveDir = Vector3.zero;
-        state = State.Normal; // přepnutí stavu na Normal po útoku
-       }
-    }
-
-  public static Vector3 GetMouseWorldPositionWithZ()
-  {
-    return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
-  }
-  public static Vector3 GetMouseWorldPositionWithZ(Camera worldCamera)
-  {
-    return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
-  }
-  public static Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera)
-  {
-    Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
-    return worldPosition;
-}
-public void Damage()
+void OnFire()
 {
-    int damageAmount = 30;
+    if (Input.GetMouseButtonDown(0) && Time.time > lastShotTime + cooldown)
+    {
+        animator.SetTrigger("Attack");
+        lastShotTime = Time.time;
+    }
 }
-*/
+
 }
