@@ -38,11 +38,11 @@ public class TestProjectile : MonoBehaviour
     {   
         if (collision.name != "Player")
         {
-            if (collision.GetComponent<Enemy>() != null)
+            if (collision.GetComponent<Enemy1>() != null)
             {
-            collision.GetComponent<Enemy>().DealDamage(damage);
+            collision.GetComponent<Enemy1>().DealDamage(damage);
             }
-            else if (collision.gameObject.CompareTag("Rock"))
+            else if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("Projectile") || collision.gameObject.CompareTag("Player"))
             {
                 return;
             }

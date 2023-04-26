@@ -1724,7 +1724,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: bc4fed52e3563a74abdbb6c4226bc2ce, type: 2}
     - target: {fileID: 945255124263611892, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611892, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_BodyType
@@ -1751,8 +1751,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611893, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Size.y
+      value: 0.17167959
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255124263611893, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 945255124263611893, guid: a289baa4649bbb54abb840d13775c651, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0008397959
       objectReference: {fileID: 0}
     - target: {fileID: 945255124263611893, guid: a289baa4649bbb54abb840d13775c651, type: 3}
       propertyPath: m_IsTrigger
@@ -1896,7 +1904,7 @@ GameObject:
   - component: {fileID: 931542621}
   m_Layer: 7
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3634,7 +3642,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009126466, y: -0.064575665}
+  m_Offset: {x: 0.007029278, y: -0.06480325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3645,7 +3653,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.05986499, y: 0.039802417}
+  m_Size: {x: 0.08896476, y: 0.039347246}
   m_EdgeRadius: 0
 --- !u!1001 &1807283280
 PrefabInstance:
