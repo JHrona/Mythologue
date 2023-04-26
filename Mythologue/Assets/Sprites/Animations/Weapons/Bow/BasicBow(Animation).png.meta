@@ -1,0 +1,446 @@
+fileFormatVersion: 2
+guid: 208baa81a95bb4b87af651928caf4c60
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BasicBow(Animation)_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 41
+        height: 60
+      alignment: 9
+      pivot: {x: 0.17198852, y: 0.4579732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88470fd7df6db420882cb0f13c2b0fdf
+      internalID: -554388986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 37
+        height: 60
+      alignment: 9
+      pivot: {x: 0.15924443, y: 0.4579732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f5b350c324747198c49dedf3f49d6c
+      internalID: -126497559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 37
+        height: 60
+      alignment: 9
+      pivot: {x: 0.15924485, y: 0.4579732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b010a83c53a2446e86a11f18a628943
+      internalID: 389281334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_3
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 0
+        width: 39
+        height: 60
+      alignment: 9
+      pivot: {x: 0.112063676, y: 0.47198233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0643c6fa6f6cc4564b10d49a27960a7d
+      internalID: -2071947824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_4
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 46
+        height: 60
+      alignment: 9
+      pivot: {x: 0.13455267, y: 0.4579732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935c0c9f29e8b4b6f9c04e806ab67c4e
+      internalID: 534935586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_6
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 46
+        height: 60
+      alignment: 9
+      pivot: {x: 0.3096625, y: 0.44396463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a38c62bfb6724e18ada1159ce900e17
+      internalID: 1988401006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_8
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 55
+        height: 60
+      alignment: 9
+      pivot: {x: 0.47218165, y: 0.47198233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25fb4cf1b1be4dd0b9d48ba32055386
+      internalID: -748867413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_9
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 42
+        height: 60
+      alignment: 9
+      pivot: {x: 0.144601, y: 0.4643107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672d39853bd30498d82312a96a69c33c
+      internalID: 525233458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_10
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 49
+        height: 60
+      alignment: 9
+      pivot: {x: 0.139773, y: 0.4579732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a6719123cd143e2afd9c83b1fa7272
+      internalID: -519501288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_11
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 0
+        width: 48
+        height: 60
+      alignment: 9
+      pivot: {x: 0.11350504, y: 0.46564472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e087d87507a494d919412e0a3b2a7a34
+      internalID: -1333589472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_13
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 0
+        width: 31
+        height: 60
+      alignment: 9
+      pivot: {x: 0.17584425, y: 0.46135038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb063a7f7037480dbf85220c359edb4
+      internalID: 1577689211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_14
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 55
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5327948, y: 0.46135038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3203c97214a0d4f62ac41b647556f088
+      internalID: -975009877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_15
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 0
+        width: 40
+        height: 60
+      alignment: 9
+      pivot: {x: 0.3518448, y: 0.4742335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fc88a19f00b41a49286acc73d791ab
+      internalID: 815111181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicBow(Animation)_16
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 0
+        width: 37
+        height: 60
+      alignment: 9
+      pivot: {x: 0.1726998, y: 0.45705593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d2d04c8cb354f289e4df36a80ecfc7
+      internalID: -716807098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BasicBow(Animation)_0: -554388986
+      BasicBow(Animation)_1: -126497559
+      BasicBow(Animation)_10: -519501288
+      BasicBow(Animation)_11: -1333589472
+      BasicBow(Animation)_12: 1974560992
+      BasicBow(Animation)_13: 1577689211
+      BasicBow(Animation)_14: -975009877
+      BasicBow(Animation)_15: 815111181
+      BasicBow(Animation)_16: -716807098
+      BasicBow(Animation)_2: 389281334
+      BasicBow(Animation)_3: -2071947824
+      BasicBow(Animation)_4: 534935586
+      BasicBow(Animation)_5: -400332356
+      BasicBow(Animation)_6: 1988401006
+      BasicBow(Animation)_7: 559585501
+      BasicBow(Animation)_8: -748867413
+      BasicBow(Animation)_9: 525233458
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
