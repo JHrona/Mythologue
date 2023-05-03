@@ -1,0 +1,1 @@
+2 frame každé animace je ve vzduchu, zbytek framu je dopad, doporučuju dopad trochu urychlit at to nevypadá napiču;
